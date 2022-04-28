@@ -1,0 +1,7 @@
+C:\Users\Offsec\Desktop\helper\helper\bin\Debug\helper.exe.config
+C:\Users\Offsec\Desktop\helper\helper\bin\Debug\helper.exe
+C:\Users\Offsec\Desktop\helper\helper\bin\Debug\helper.pdb
+C:\Users\Offsec\Desktop\helper\helper\obj\Debug\helper.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\helper\helper\obj\Debug\helper.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\helper\helper\obj\Debug\helper.exe
+C:\Users\Offsec\Desktop\helper\helper\obj\Debug\helper.pdb

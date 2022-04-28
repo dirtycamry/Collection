@@ -1,0 +1,20 @@
+Sub Document_Open()
+    MyMacro
+End Sub
+
+Sub AutoOpen()
+    MyMacro
+End Sub
+
+Sub MyMacro()
+Dim user As String
+Dim comp As String
+Dim msg As String
+user = Environ("USERNAME")
+comp = Environ("COMPUTERNAME")
+msg = " Username = " & user & " and Computername = " & comp
+For counter = 1 To 5
+    MsgBox (msg)
+Next counter
+   
+End Sub

@@ -1,0 +1,14 @@
+Private Declare Function MessageBox Lib "User32" Alias "MessageBoxA" (ByVal hWnd As LongPtr, ByVal lpText As String, ByVal lpCaption As String, ByVal wType As Long) As Long
+Sub Document_Open()
+    MyMacro
+End Sub
+Sub AutoOpen()
+    MyMacro
+End Sub
+Sub MyMacro()
+    Dim response As Long
+    response = MessageBox(0, "This is a test", "Username", 0)
+End Sub
+
+'https://www.mrexcel.com/board/threads/modeless-message-box.1121053/
+

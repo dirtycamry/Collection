@@ -1,0 +1,3 @@
+DotNetToJScript.exe ExampleAssembly.dll --lang=Jscript --ver=v4 -o demo.js
+
+You compile the ExampleAssembly.Dll and convert it to .js

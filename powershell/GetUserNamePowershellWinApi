@@ -1,0 +1,14 @@
+$sig = @'
+[DllImport("advapi32.dll", SetLastError = true)]
+public static extern bool GetUserName(System.Text.StringBuilder sb, ref Int32 length);
+'@
+
+Add-Type -MemberDefinition $sig -Namespace Advapi32 -Name Util
+
+$size = 64
+$str = New-Object System.Text.StringBuilder -ArgumentList $size
+
+[Advapi32.util]::GetUserName($str,[ref]$size) |Out-Null
+$str.ToString()
+
+$got from pinvoke.net

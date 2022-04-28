@@ -1,0 +1,7 @@
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\bin\x64\Debug\ConsoleApp1.exe.config
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\bin\x64\Debug\ConsoleApp1.exe
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\bin\x64\Debug\ConsoleApp1.pdb
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\obj\x64\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\obj\x64\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\obj\x64\Debug\ConsoleApp1.exe
+C:\Users\Offsec\Desktop\ConsoleApp1\ConsoleApp1\obj\x64\Debug\ConsoleApp1.pdb

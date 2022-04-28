@@ -1,0 +1,12 @@
+$Assemblies = [AppDomain]::CurrentDomain.GetAssemblies()
+
+$Assemblies |
+  ForEach-Object {
+    $_.GetTypes()|
+      ForEach-Object {
+          $_ | Get-Member -Static| Where-Object {
+            $_.TypeName.Contains('Unsafe')
+          }
+      } 2> $null
+    }
+#for use for in memory compilation 3.6.2

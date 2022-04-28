@@ -1,0 +1,7 @@
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\bin\Debug\XORShellCodeRunner.exe.config
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\bin\Debug\XORShellCodeRunner.exe
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\bin\Debug\XORShellCodeRunner.pdb
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\obj\Debug\XORShellCodeRunner.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\obj\Debug\XORShellCodeRunner.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\obj\Debug\XORShellCodeRunner.exe
+C:\Users\Offsec\Desktop\XORShellCodeRunner\XORShellCodeRunner\obj\Debug\XORShellCodeRunner.pdb

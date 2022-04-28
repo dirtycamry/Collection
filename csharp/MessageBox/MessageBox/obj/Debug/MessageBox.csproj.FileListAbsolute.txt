@@ -1,0 +1,7 @@
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\bin\Debug\MessageBox.exe.config
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\bin\Debug\MessageBox.exe
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\bin\Debug\MessageBox.pdb
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\obj\Debug\MessageBox.csprojAssemblyReference.cache
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\obj\Debug\MessageBox.exe
+C:\Users\Offsec\source\repos\MessageBox\MessageBox\obj\Debug\MessageBox.pdb

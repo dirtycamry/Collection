@@ -1,0 +1,6 @@
+C:\Users\Offsec\Desktop\CyberX32bitrunner\CyberX32bitrunner\bin\x86\Release\CyberX32bitrunner.exe
+C:\Users\Offsec\Desktop\CyberX32bitrunner\CyberX32bitrunner\bin\x86\Release\CyberX32bitrunner.pdb
+C:\Users\Offsec\Desktop\CyberX32bitrunner\CyberX32bitrunner\obj\x86\Release\CyberX32bitrunner.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\CyberX32bitrunner\CyberX32bitrunner\obj\x86\Release\CyberX32bitrunner.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\CyberX32bitrunner\CyberX32bitrunner\obj\x86\Release\CyberX32bitrunner.exe
+C:\Users\Offsec\Desktop\CyberX32bitrunner\CyberX32bitrunner\obj\x86\Release\CyberX32bitrunner.pdb

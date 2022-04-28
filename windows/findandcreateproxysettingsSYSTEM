@@ -1,0 +1,5 @@
+#user proxy settings stored
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\InternetSettings
+
+#map HKU to search for proxy settings as system
+New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS | Out-Null

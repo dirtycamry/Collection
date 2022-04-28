@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberX32bitrunner", "CyberX32bitrunner\CyberX32bitrunner.csproj", "{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Debug|x86.ActiveCfg = Release|x86
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Debug|x86.Build.0 = Release|x86
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Release|x86.ActiveCfg = Release|x86
+		{A91BB61C-E529-42D2-9AA3-E78C7A4570C7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79078FC2-649F-445D-97F1-5716F1B7C63B}
+	EndGlobalSection
+EndGlobal

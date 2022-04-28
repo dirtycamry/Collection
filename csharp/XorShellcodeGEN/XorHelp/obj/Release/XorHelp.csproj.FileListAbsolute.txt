@@ -1,0 +1,6 @@
+C:\Users\Offsec\Desktop\XorHelp\XorHelp\bin\Release\XorHelp.exe.config
+C:\Users\Offsec\Desktop\XorHelp\XorHelp\bin\Release\XorHelp.exe
+C:\Users\Offsec\Desktop\XorHelp\XorHelp\bin\Release\XorHelp.pdb
+C:\Users\Offsec\Desktop\XorHelp\XorHelp\obj\Release\XorHelp.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\XorHelp\XorHelp\obj\Release\XorHelp.exe
+C:\Users\Offsec\Desktop\XorHelp\XorHelp\obj\Release\XorHelp.pdb

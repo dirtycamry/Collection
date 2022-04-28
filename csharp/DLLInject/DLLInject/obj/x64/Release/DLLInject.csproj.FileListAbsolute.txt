@@ -1,0 +1,7 @@
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\bin\x64\Release\DLLInject.exe.config
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\bin\x64\Release\DLLInject.exe
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\bin\x64\Release\DLLInject.pdb
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\obj\x64\Release\DLLInject.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\obj\x64\Release\DLLInject.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\obj\x64\Release\DLLInject.exe
+C:\Users\Offsec\Desktop\DLLInject\DLLInject\obj\x64\Release\DLLInject.pdb

@@ -1,0 +1,6 @@
+C:\Users\Offsec\Desktop\CreateDLL\ClassLibrary1\bin\x86\Release\ClassLibrary1.dll
+C:\Users\Offsec\Desktop\CreateDLL\ClassLibrary1\bin\x86\Release\ClassLibrary1.pdb
+C:\Users\Offsec\Desktop\CreateDLL\ClassLibrary1\obj\x86\Release\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\CreateDLL\ClassLibrary1\obj\x86\Release\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\CreateDLL\ClassLibrary1\obj\x86\Release\ClassLibrary1.dll
+C:\Users\Offsec\Desktop\CreateDLL\ClassLibrary1\obj\x86\Release\ClassLibrary1.pdb

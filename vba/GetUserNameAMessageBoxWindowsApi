@@ -1,0 +1,22 @@
+Private Declare Function GetUserName Lib "advapi32.dll" Alias "GetUserNameA" (ByVal lpBuffer As String, ByRef nSize As Long) As Long
+Private Declare Function MessageBox Lib "User32" Alias "MessageBoxA" (ByVal hWnd As LongPtr, ByVal lpText As String, ByVal lpCaption As String, ByVal wType As Long) As Long
+Sub Document_Open()
+    MyUsername
+End Sub
+Sub AutoOpen()
+    MyUsername
+End Sub
+Sub MyUsername()
+  Dim res As Long
+  Dim MyBuff As String * 256
+  Dim MySize As Long
+  Dim strlen As Long
+  MySize = 256
+  
+  res = GetUserName(MyBuff, MySize)
+  strlen = InStr(1, MyBuff, vbNullChar) - 1
+  Dim response As Long
+  response = MessageBox(0, Left$(MyBuff, strlen), "This is your username", 0)
+End Sub
+
+

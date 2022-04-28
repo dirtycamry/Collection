@@ -1,0 +1,14 @@
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.exe.config
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.exe
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.pdb
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csprojAssemblyReference.cache
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csproj.CoreCompileInputs.cache
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.exe
+\\tsclient\home\OSEP\visualstudio\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.pdb
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.exe.config
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.exe
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.pdb
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csprojAssemblyReference.cache
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.csproj.CoreCompileInputs.cache
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.exe
+\\tsclient\home\OSEP\csharp\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.pdb
