@@ -11,3 +11,10 @@ C:\Users\Offsec\Desktop\XorShellcodeGEN\XorHelp\obj\Release\XorHelp.csprojAssemb
 C:\Users\Offsec\Desktop\XorShellcodeGEN\XorHelp\obj\Release\XorHelp.csproj.CoreCompileInputs.cache
 C:\Users\Offsec\Desktop\XorShellcodeGEN\XorHelp\obj\Release\XorHelp.exe
 C:\Users\Offsec\Desktop\XorShellcodeGEN\XorHelp\obj\Release\XorHelp.pdb
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\bin\Release\XorHelp.exe.config
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\bin\Release\XorHelp.exe
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\bin\Release\XorHelp.pdb
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\obj\Release\XorHelp.csprojAssemblyReference.cache
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\obj\Release\XorHelp.csproj.CoreCompileInputs.cache
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\obj\Release\XorHelp.exe
+\\tsclient\home\OSEP-Collection\csharp\XorShellcodeGENVBA\XorHelp\obj\Release\XorHelp.pdb

