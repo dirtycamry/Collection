@@ -1,0 +1,14 @@
+Public Function HexToString(ByVal HexToStr As String) As String
+Dim strTemp   As String
+Dim strReturn As String
+Dim I         As Long
+    For I = 1 To Len(HexToStr) Step 2
+        strTemp = Chr$(Val("&H" & Mid$(HexToStr, I, 2)))
+        strReturn = strReturn & strTemp
+    Next I
+    HexToString = strReturn
+End Function
+
+Sub MyMacro()
+  MsgBox (HexToString("74657374313233313233"))
+End Sub
