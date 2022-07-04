@@ -1,0 +1,9 @@
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\bin\x64\Release\CustomRunSpace.exe.config
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\bin\x64\Release\CustomRunSpace.exe
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\bin\x64\Release\CustomRunSpace.pdb
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\bin\x64\Release\System.Management.Automation.dll
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\obj\x64\Release\CustomRunSpace.csprojAssemblyReference.cache
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\obj\x64\Release\CustomRunSpace.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\obj\x64\Release\CustomRunSpace.csproj.CopyComplete
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\obj\x64\Release\CustomRunSpace.exe
+C:\Users\Offsec\source\repos\CustomRunSpace\CustomRunSpace\obj\x64\Release\CustomRunSpace.pdb
