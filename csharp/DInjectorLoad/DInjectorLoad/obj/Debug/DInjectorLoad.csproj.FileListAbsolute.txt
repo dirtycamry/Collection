@@ -1,0 +1,7 @@
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\bin\Debug\DInjectorLoad.exe.config
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\bin\Debug\DInjectorLoad.exe
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\bin\Debug\DInjectorLoad.pdb
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\Debug\DInjectorLoad.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\Debug\DInjectorLoad.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\Debug\DInjectorLoad.exe
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\Debug\DInjectorLoad.pdb

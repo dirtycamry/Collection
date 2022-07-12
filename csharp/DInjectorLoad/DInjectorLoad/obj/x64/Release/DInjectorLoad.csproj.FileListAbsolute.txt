@@ -1,0 +1,6 @@
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\bin\x64\Release\DInjectorLoad.exe.config
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\bin\x64\Release\DInjectorLoad.exe
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\bin\x64\Release\DInjectorLoad.pdb
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\x64\Release\DInjectorLoad.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\x64\Release\DInjectorLoad.exe
+C:\Users\Offsec\Desktop\DInjectorLoad\DInjectorLoad\obj\x64\Release\DInjectorLoad.pdb

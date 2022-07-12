@@ -1,0 +1,7 @@
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\bin\x64\Release\SharpUpAssemblyLoad.exe.config
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\bin\x64\Release\SharpUpAssemblyLoad.exe
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\bin\x64\Release\SharpUpAssemblyLoad.pdb
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\obj\x64\Release\SharpUpAssemblyLoad.csprojAssemblyReference.cache
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\obj\x64\Release\SharpUpAssemblyLoad.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\obj\x64\Release\SharpUpAssemblyLoad.exe
+C:\Users\Offsec\Desktop\SharpUpAssemblyLoad\SharpUpAssemblyLoad\obj\x64\Release\SharpUpAssemblyLoad.pdb
