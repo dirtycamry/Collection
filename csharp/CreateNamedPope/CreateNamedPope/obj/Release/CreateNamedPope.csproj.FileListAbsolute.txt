@@ -1,0 +1,6 @@
+C:\Users\admin.CORP1\Desktop\CreateNamedPope\CreateNamedPope\bin\Release\CreateNamedPope.exe.config
+C:\Users\admin.CORP1\Desktop\CreateNamedPope\CreateNamedPope\bin\Release\CreateNamedPope.exe
+C:\Users\admin.CORP1\Desktop\CreateNamedPope\CreateNamedPope\bin\Release\CreateNamedPope.pdb
+C:\Users\admin.CORP1\Desktop\CreateNamedPope\CreateNamedPope\obj\Release\CreateNamedPope.csprojAssemblyReference.cache
+C:\Users\admin.CORP1\Desktop\CreateNamedPope\CreateNamedPope\obj\Release\CreateNamedPope.exe
+C:\Users\admin.CORP1\Desktop\CreateNamedPope\CreateNamedPope\obj\Release\CreateNamedPope.pdb

