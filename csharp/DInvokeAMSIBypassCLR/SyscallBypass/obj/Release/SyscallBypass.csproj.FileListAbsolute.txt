@@ -1,0 +1,8 @@
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\bin\Release\SyscallBypass.pdb
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\bin\Release\System.Management.Automation.dll
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\obj\Release\SyscallBypass.csproj.AssemblyReference.cache
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\obj\Release\SyscallBypass.csproj.CoreCompileInputs.cache
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\obj\Release\SyscallBypass.csproj.CopyComplete
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\obj\Release\SyscallBypass.pdb
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\bin\Release\SyscallBypass.exe
+C:\Tools\SyscallAmsiScanBufferBypass\SyscallBypass\obj\Release\SyscallBypass.exe
