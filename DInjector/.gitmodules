@@ -1,0 +1,4 @@
+[submodule "DInjector/DInvoke"]
+	path = DInjector/DInvoke
+	url = https://github.com/snovvcrash/DInvoke
+	branch = minified
